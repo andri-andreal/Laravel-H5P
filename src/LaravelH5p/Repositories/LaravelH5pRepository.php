@@ -3,25 +3,25 @@
 /*
  *
  * @Project        Laravel framework integration class
- * @Copyright      Andreal
+ * @Copyright      Djoudi
  * @Created        2018-2-20
  * @Filename       H5PLaravel.php
  * @Description
  *
  */
 
-namespace Andreal\LaravelH5p\Repositories;
+namespace Djoudi\LaravelH5p\Repositories;
 
 use Carbon\Carbon;
 use DB;
-use Andreal\LaravelH5p\Eloquents\H5pContent;
-use Andreal\LaravelH5p\Eloquents\H5pContentsLibrary;
-use Andreal\LaravelH5p\Eloquents\H5pContentsUserData;
-use Andreal\LaravelH5p\Eloquents\H5pLibrariesLibrary;
-use Andreal\LaravelH5p\Eloquents\H5pLibrary;
-use Andreal\LaravelH5p\Eloquents\H5pResult;
-use Andreal\LaravelH5p\Events\H5pEvent;
-use Andreal\LaravelH5p\Helpers\H5pHelper;
+use Djoudi\LaravelH5p\Eloquents\H5pContent;
+use Djoudi\LaravelH5p\Eloquents\H5pContentsLibrary;
+use Djoudi\LaravelH5p\Eloquents\H5pContentsUserData;
+use Djoudi\LaravelH5p\Eloquents\H5pLibrariesLibrary;
+use Djoudi\LaravelH5p\Eloquents\H5pLibrary;
+use Djoudi\LaravelH5p\Eloquents\H5pResult;
+use Djoudi\LaravelH5p\Events\H5pEvent;
+use Djoudi\LaravelH5p\Helpers\H5pHelper;
 use GuzzleHttp\Client;
 use H5PFrameworkInterface;
 use Illuminate\Support\Facades\App;
@@ -39,17 +39,11 @@ class LaravelH5pRepository implements H5PFrameworkInterface
      */
     protected $messages = ['error' => [], 'updated' => []];
 
-    public function loadAddons()
-    {
-    }
 
-    public function getLibraryConfig($libraries = null)
-    {
-    }
 
-    public function libraryHasUpgrade($library)
-    {
-    }
+     public function loadAddons(){}
+     public function getLibraryConfig($libraries = NULL){}
+     public function libraryHasUpgrade($library){}
 
     /**
      * Implements setErrorMessage.
@@ -278,17 +272,17 @@ class LaravelH5pRepository implements H5PFrameworkInterface
         } else {
             $library['libraryId'] = DB::table('h5p_libraries')
                 ->where('id', $library['libraryId'])->update([
-                    'title'            => $library['title'],
-                    'patch_version'    => $library['patchVersion'],
-                    'runnable'         => $library['runnable'],
-                    'fullscreen'       => $library['fullscreen'],
-                    'embed_types'      => $embedTypes,
-                    'preloaded_js'     => $preloadedJs,
-                    'preloaded_css'    => $preloadedCss,
-                    'drop_library_css' => $dropLibraryCss,
-                    'semantics'        => $library['semantics'],
-                    'has_icon'         => $library['hasIcon'] ? 1 : 0,
-                ]);
+                'title'            => $library['title'],
+                'patch_version'    => $library['patchVersion'],
+                'runnable'         => $library['runnable'],
+                'fullscreen'       => $library['fullscreen'],
+                'embed_types'      => $embedTypes,
+                'preloaded_js'     => $preloadedJs,
+                'preloaded_css'    => $preloadedCss,
+                'drop_library_css' => $dropLibraryCss,
+                'semantics'        => $library['semantics'],
+                'has_icon'         => $library['hasIcon'] ? 1 : 0,
+            ]);
             $this->deleteLibraryDependencies($library['libraryId']);
         }
 
@@ -710,7 +704,7 @@ class LaravelH5pRepository implements H5PFrameworkInterface
     /**
      * Implements getNumContent().
      */
-    public function getNumContent($library_id, $skip = null)
+    public function getNumContent($library_id, $skip = NULL)
     {
         return H5pContent::where('library_id', $library_id)->count();
     }
