@@ -3,7 +3,7 @@
 /*
  *
  * @Project        Laravel framework integration class
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2018-2-20
  * @Filename       H5PLaravel.php
  * @Description

@@ -1,11 +1,11 @@
 <?php
 
-namespace Djoudi\LaravelH5p\Http\Controllers;
+namespace Andreal\LaravelH5p\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Djoudi\LaravelH5p\Eloquents\H5pContent;
-use Djoudi\LaravelH5p\Events\H5pEvent;
-use Djoudi\LaravelH5p\LaravelH5p;
+use Andreal\LaravelH5p\Eloquents\H5pContent;
+use Andreal\LaravelH5p\Events\H5pEvent;
+use Andreal\LaravelH5p\LaravelH5p;
 use H5pCore;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;

@@ -3,14 +3,14 @@
 /*
  *
  * @Project        Expression project.displayName is undefined on line 5, column 35 in Templates/Licenses/license-default.txt.
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2017-02-21
  * @Filename       H5PExceptionHandler.php
  * @Description
  *
  */
 
-namespace Djoudi\LaravelH5p\Exceptions;
+namespace Andreal\LaravelH5p\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
