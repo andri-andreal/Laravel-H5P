@@ -1,11 +1,11 @@
 {
-    "name": "djoudi/laravel-h5p",
+    "name": "andreal/laravel-h5p",
     "description": "H5P Plugin for laravel platform",
     "type": "library",
     "authors": [
         {
-            "name": "Abdelouahab Djoudi",
-            "email": "info@djoudi.net"
+            "name": "Andreal",
+            "email": "info@andreal.net"
         }
     ],
     "license": "MIT",
@@ -13,13 +13,13 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Djoudi\\LaravelH5p\\": "src/LaravelH5p"
+            "Andreal\\LaravelH5p\\": "src/LaravelH5p"
         }
     },
     "require": {
         "php": "^7.2",
-        "laravel/framework": "7.*",
-        "laravelcollective/html": "7.0",
+        "laravel/framework": "^5.7.*",
+        "laravelcollective/html": "5.7",
          "h5p/h5p-core": "^1.24.0",
          "h5p/h5p-editor": "^1.24.0",
         "guzzlehttp/guzzle": "^6.2"
@@ -34,10 +34,10 @@
      "extra": {
         "laravel": {
             "providers": [
-                "Djoudi\\LaravelH5p\\LaravelH5pServiceProvider"
+                "Andreal\\LaravelH5p\\LaravelH5pServiceProvider"
             ],
             "aliases": {
-                "LaravelH5p": "Djoudi\\LaravelH5p\\Facades"
+                "LaravelH5p": "Andreal\\LaravelH5p\\Facades"
             }
         }
     }

@@ -3,19 +3,19 @@
 /*
  *
  * @Project        Expression project.displayName is undefined on line 5, column 35 in Templates/Licenses/license-default.txt.
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2017-02-01
  * @Filename       H5pStorage.php
  * @Description
  *
  */
 
-namespace Djoudi\LaravelH5p\Storages;
+namespace Andreal\LaravelH5p\Storages;
 
 use App;
 use DB;
-use Djoudi\LaravelH5p\Eloquents\H5pLibrary;
-use Djoudi\LaravelH5p\Eloquents\H5pTmpfile;
+use Andreal\LaravelH5p\Eloquents\H5pLibrary;
+use Andreal\LaravelH5p\Eloquents\H5pTmpfile;
 use H5peditorStorage;
 
 /**

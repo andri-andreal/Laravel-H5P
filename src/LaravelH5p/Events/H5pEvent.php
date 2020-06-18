@@ -3,16 +3,16 @@
 /*
  *
  * @Project        Expression project.displayName is undefined on line 5, column 35 in Templates/Licenses/license-default.txt.
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2018-02-21
  * @Filename       H5PEvent.php
  * @Description
  *
  */
 
-namespace Djoudi\LaravelH5p\Events;
+namespace Andreal\LaravelH5p\Events;
 
-use Djoudi\LaravelH5p\Eloquents\H5pEventLog;
+use Andreal\LaravelH5p\Eloquents\H5pEventLog;
 use H5PEventBase;
 use Illuminate\Support\Facades\Auth;
 

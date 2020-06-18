@@ -3,7 +3,7 @@
 /*
  *
  * @Project        laravel-h5p
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2018-02-20
  * @Filename       laravel-h5p.php
  * @Description

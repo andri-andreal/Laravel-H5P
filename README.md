@@ -1,6 +1,6 @@
 [![StyleCI](https://styleci.io/repos/122313672/shield?branch=master)](https://styleci.io/repos/122313672)
-[![Build Status](https://travis-ci.org/djoudi/Laravel-H5P.svg?branch=master)](https://travis-ci.org/djoudi/Laravel-H5P)
-[![Scrutinizer Coverage](https://scrutinizer-ci.com/g/djoudi/Laravel-H5P/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/djoudi/Laravel-H5P/?branch=master)
+[![Build Status](https://travis-ci.org/andreal/Laravel-H5P.svg?branch=master)](https://travis-ci.org/andreal/Laravel-H5P)
+[![Scrutinizer Coverage](https://scrutinizer-ci.com/g/andreal/Laravel-H5P/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/andreal/Laravel-H5P/?branch=master)
 
 
 
@@ -15,7 +15,7 @@
 Require it in the Composer.
 
 ```bash
-composer require djoudi/laravel-h5p
+composer require andreal/laravel-h5p
 ```
 
 Publish the Views, Config and so things.
@@ -48,7 +48,7 @@ Add to Composer-Classmap:
 
 ```php
 'providers' => [
-    Djoudi\LaravelH5p\LaravelH5pServiceProvider::class,
+    Andreal\LaravelH5p\LaravelH5pServiceProvider::class,
 ];
 ```
 
@@ -68,4 +68,4 @@ mklink /d libraries ..\..\..\storage\h5p\libraries
 ```
 
 ## Demo
-you can see a demo  at : https://github.com/djoudi/laravel-h5p-demo
+you can see a demo  at : https://github.com/andreal/laravel-h5p-demo

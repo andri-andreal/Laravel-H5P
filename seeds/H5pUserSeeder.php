@@ -13,7 +13,7 @@ class H5pUserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name'     => 'H5P Creator',
-            'email'    => 'info@djoudi.net',
+            'email'    => 'info@andreal.net',
             'password' => bcrypt('5447809'),
         ]);
     }

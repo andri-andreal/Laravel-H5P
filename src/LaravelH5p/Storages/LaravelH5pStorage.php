@@ -3,14 +3,14 @@
 /*
  *
  * @Project        Expression project.displayName is undefined on line 5, column 35 in Templates/Licenses/license-default.txt.
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2017-02-11
  * @Filename       FilesStorage.php
  * @Description
  *
  */
 
-namespace Djoudi\LaravelH5p\Storages;
+namespace Andreal\LaravelH5p\Storages;
 
 use H5PFileStorage;
 

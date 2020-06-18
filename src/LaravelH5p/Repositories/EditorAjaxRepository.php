@@ -3,17 +3,17 @@
 /*
  *
  * @Project
- * @Copyright      Djoudi
+ * @Copyright      Andreal
  * @Created        2018-02-13
  * @Filename       EditorAjaxRepogitory.php
  * @Description
  *
  */
 
-namespace Djoudi\LaravelH5p\Repositories;
+namespace Andreal\LaravelH5p\Repositories;
 
 use DB;
-use Djoudi\LaravelH5p\Eloquents\H5pLibrariesHubCache;
+use Andreal\LaravelH5p\Eloquents\H5pLibrariesHubCache;
 use H5PEditorAjaxInterface;
 use Illuminate\Support\Facades\Auth;
 
